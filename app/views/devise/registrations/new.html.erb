@@ -7,7 +7,7 @@
     </div>
       <%= form_with model: @user, url: user_registration_path, class: 'ragistration-main', local: true do |f| %>
 
-        
+        <%= render 'shared/error_messages', model: f.object %>
     
         <%= f.label :nickname%>
         <%= f.text_field :nickname, class: "mb-3", class: "form-control", autofocus: true%>
