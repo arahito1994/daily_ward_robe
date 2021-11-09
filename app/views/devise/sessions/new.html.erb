@@ -1,0 +1,38 @@
+<%=render "shared/header_item" %>
+
+
+<main class="form-signin">
+<div class='account-page' id='account-page'>
+  <div class='account-page__inner clearfix'>
+    <div class='account-page__inner--left account-page__header'>
+      <h2>Log in</h2>
+      <h5>登録しているユーザーでログイン</h5>
+      <%= render "devise/shared/links"%>
+    </div>
+      <%= form_with model: @user, url: user_session_path, class: 'registration-main', local: true do |f|%>
+
+       <div class='login-flash-message'>
+        <%= flash[:notice] %>
+        <%= flash[:alert] %>
+       </div>
+
+        <%= f.label :email%>
+        <%= f.email_field :email, class: "form-control", autofocus: true%>
+        <%= f.label :password%>
+        <i>(英数字6文字以上)</i>
+        <%= f.password_field :password, class: "form-control", autocomplete: "off"%>
+        <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> 記憶する
+      </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">サインイン</button>
+       <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+    
+</main>

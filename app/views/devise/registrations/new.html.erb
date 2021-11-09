@@ -1,0 +1,43 @@
+<%=render "shared/header_item" %>
+
+
+<main class="form-signin">
+<div class='account-page' id='account-page'>
+  <div class='account-page__inner clearfix'>
+    <div class='account-page__inner--left account-page__header'>
+      <h2>Create Account</h2>
+      <h5>新規アカウントの作成</h5>
+    </div>
+      <%= form_with model: @user, url: user_registration_path, class: 'ragistration-main', local: true do |f| %>
+
+        <%= render 'shared/error_messages', model: f.object %>
+    
+        <%= f.label :nickname%>
+        <%= f.text_field :nickname, class: "mb-3", class: "form-control", autofocus: true%>
+        <%= f.label :email%>
+        <%= f.email_field :email, class: "mb-3", class: "form-control" %>
+        <%= f.label :password%><i>(英数6文字以上)</i>
+        <%= f.password_field :password, class: "mb-3", class: "form-control" %>
+        <%= f.label :password_confirmation%>
+        <%= f.password_field :password_confirmation, class: "mb-3", class: "form-control" %>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> 記憶する
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">サインイン</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p>
+  </div>
+    <% end %>
+  </div>
+</div>
+ </main>
+
+     
+      
+
+
+
+
+
+
