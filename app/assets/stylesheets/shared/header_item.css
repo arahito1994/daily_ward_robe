@@ -7,6 +7,13 @@
   align-items: center;
 }
 
+.purchase-btn {
+  text-decoration: none;
+  margin-right: 3vw;
+  color: #fff;
+  font-weight: bold;
+}
+
 .user-nickname {
   text-decoration: none;
   margin-right: 3vw;
