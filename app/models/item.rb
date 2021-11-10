@@ -7,5 +7,6 @@ class Item < ApplicationRecord
   end
   
 
-  
+  be_longs :user
+  has_one_attached :image
 end
