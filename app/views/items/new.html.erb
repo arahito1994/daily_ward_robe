@@ -1,0 +1,64 @@
+<%= render "shared/header_item"%>
+
+    
+<div class="overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" >
+  <div class="body-items">
+  <main>
+    <div class="py-5 text-center">
+      <h2>投稿画面</h2>
+      <p class="lead">text</p>
+    </div>
+
+    <div class="row g-3">
+    <%= form_with model:@item, local: true do |f|%>
+
+
+      <div class="field">
+        <%= f.label :image, "コーディネートの画像" %><br />
+        <%= f.file_field :image, id:"prototype_image", class: "btn-danger" %>
+      </div>
+
+
+      <div class="col-sm-6"> 
+        <%= f.label :title, "タイトル" %><br />
+        <%= f.text_field :title, class: "mb-3", class: "form-control", id:"title" %>
+      </div>
+
+      <div class="col-sm-6"> 
+        <%= f.label :title, "コンセプト" %><br />
+        <%= f.text_field :title, class: "mb-3", class: "form-control", id:"title" %>
+      </div>
+
+      <div class="col-sm-6"> 
+        <%= f.label :title, "アウター" %><br />
+        <%= f.text_field :title, class: "mb-3", class: "form-control", id:"title" %>
+      </div>
+
+      <div class="col-sm-6"> 
+        <%= f.label :title, "トップス" %><br />
+        <%= f.text_field :title, class: "mb-3", class: "form-control", id:"title" %>
+      </div>
+
+      <div class="col-sm-6"> 
+        <%= f.label :title, "ボトムス" %><br />
+        <%= f.text_field :title, class: "mb-3", class: "form-control", id:"title" %>
+      </div>
+
+      <div class="col-sm-6"> 
+        <%= f.label :title, "シューズ" %><br />
+        <%= f.text_field :title, class: "mb-3", class: "form-control", id:"title" %>
+      </div>
+
+      <div class="col-sm-6"> 
+        <%= f.label :title, "小物類" %><br />
+        <%= f.text_field :title, class: "mb-3", class: "form-control", id:"title" %>
+      </div>
+        <%= f.submit "保存する", class: "btn btn-primary btn-lg"%>
+    <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%#= render "shared/footer_item"%>
