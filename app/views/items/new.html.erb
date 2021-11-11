@@ -13,12 +13,6 @@
     <%= form_with model:@item, local: true do |f|%>
 
 
-      <div class="field">
-        <%= f.label :image, "コーディネートの画像" %><br />
-        <%= f.file_field :image, id:"prototype_image", class: "btn-danger" %>
-      </div>
-
-
       <div class="col-sm-6"> 
         <%= f.label :title, "タイトル" %><br />
         <%= f.text_field :title, class: "mb-3", class: "form-control", id:"title" %>
@@ -53,7 +47,15 @@
         <%= f.label :title, "小物類" %><br />
         <%= f.text_field :title, class: "mb-3", class: "form-control", id:"title" %>
       </div>
+      <div id="image-list"></div>
+      <div class="field">
+        <%= f.label :image, "コーディネートの画像" %><br />
+        <%= f.file_field :image, id:"item_image", class: "btn-danger" %>
+      </div>
+
+      <div>
         <%= f.submit "保存する", class: "btn btn-primary btn-lg"%>
+      </div>
     <% end %>
       </div>
     </div>
