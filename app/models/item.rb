@@ -3,7 +3,7 @@ class Item < ApplicationRecord
   with_options presence: true do
     validates :title
     validates :style_text
-    validates :image
+    validates :images
   end
   
 

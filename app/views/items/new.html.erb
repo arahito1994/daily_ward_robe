@@ -17,40 +17,34 @@
         <%= f.label :title, "タイトル" %><br />
         <%= f.text_field :title, class: "mb-3", class: "form-control", id:"title" %>
       </div>
-
       <div class="col-sm-6"> 
-        <%= f.label :title, "コンセプト" %><br />
-        <%= f.text_field :title, class: "mb-3", class: "form-control", id:"title" %>
+        <%= f.label :style_text, "コンセプト" %><br />
+        <%= f.text_field :style_text, class: "mb-3", class: "form-control", id:"style_text" %>
       </div>
-
       <div class="col-sm-6"> 
-        <%= f.label :title, "アウター" %><br />
-        <%= f.text_field :title, class: "mb-3", class: "form-control", id:"title" %>
+        <%= f.label :outer_item, "アウター" %><br />
+        <%= f.text_field :outer_item, class: "mb-3", class: "form-control", id:"outer_item" %>
       </div>
-
       <div class="col-sm-6"> 
-        <%= f.label :title, "トップス" %><br />
-        <%= f.text_field :title, class: "mb-3", class: "form-control", id:"title" %>
+        <%= f.label :tops_item, "トップス" %><br />
+        <%= f.text_field :tops_item, class: "mb-3", class: "form-control", id:"tops_item" %>
       </div>
-
       <div class="col-sm-6"> 
-        <%= f.label :title, "ボトムス" %><br />
-        <%= f.text_field :title, class: "mb-3", class: "form-control", id:"title" %>
+        <%= f.label :bottoms_item, "ボトムス" %><br />
+        <%= f.text_field :bottoms_item, class: "mb-3", class: "form-control", id:"bottoms_item" %>
       </div>
-
       <div class="col-sm-6"> 
-        <%= f.label :title, "シューズ" %><br />
-        <%= f.text_field :title, class: "mb-3", class: "form-control", id:"title" %>
+        <%= f.label :shoes_item, "シューズ" %><br />
+        <%= f.text_field :shoes_item, class: "mb-3", class: "form-control", id:"shoes_item" %>
       </div>
-
       <div class="col-sm-6"> 
-        <%= f.label :title, "小物類" %><br />
-        <%= f.text_field :title, class: "mb-3", class: "form-control", id:"title" %>
+        <%= f.label :goods_item, "小物類" %><br />
+        <%= f.text_field :goods_item, class: "mb-3", class: "form-control", id:"goods_item" %>
       </div>
       <div id="image-list"></div>
       <div class="field">
-        <%= f.label :image, "コーディネートの画像" %><br />
-        <%= f.file_field :images, name: 'message[image][]', id:"item_image", class: "btn-danger" %>
+        <%= f.label :images, "コーディネートの画像" %><br />
+        <%= f.file_field :images, name: 'item[image][]', id:"item_image", class: "btn-danger" %>
       </div>
       <div>
         <%= f.submit "投稿する", class: "btn btn-primary btn-lg"%>
