@@ -36,9 +36,7 @@
 }
 
 
-/*
- * Extra utilities
- */
+
 
 .flex-equal > * {
   flex: 1;
@@ -47,4 +45,10 @@
   .flex-md-equal > * {
     flex: 1;
   }
+}
+
+.item-images img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
 }
