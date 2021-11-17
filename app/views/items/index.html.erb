@@ -6,7 +6,7 @@
   <div class="card-img-overlay">
     <h1 class="card-title">ー新しいを日常的にー</h1>
     <p class="card-text">あなたのワードローブに新しい、そして日常的な選択肢を</p>
-    <p class="card-text">Daily-Wardrobeを使う人に新しい選択肢をそして新しいを日常的に</p>
+    <p class="card-text">Daily_Wardrobeを使う人に新しい選択肢をそして新しいを日常的に</p>
   </div>
 </div>
 </div>
@@ -25,10 +25,8 @@
           <a href="#" class="stretched-link">詳細</a>
         </div>
         <div class="col-auto d-none d-lg-block">
-        <div class="item-images">
-          <% item.images.each do |image| %>
-          <%= image_tag image, class:'images' %>
-          <% end %>
+        <div class="item-images img-fluid">
+        <%= image_tag item.images[0], class:'images' %>
         </div>
         </div>
       </div>
