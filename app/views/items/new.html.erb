@@ -4,7 +4,7 @@
 <div class="overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" >
  <main class="container">
     <div class="py-5 ">
-      <h2>投稿画面</h2>
+      <h2 class="alert alert-dark" role="alert">投稿画面</h2>
       <p class="lead ">Todays Your Coordination</p>
     </div>
   
@@ -15,10 +15,10 @@
 
     <div class="form-items">
       <div class="col-sm-7"> 
-        <%= f.label :title, "Title-タイトル-" %><br />
+        <%= f.label :title, "Title-タイトル-" %><span class="badge bg-danger">必須</span><br />
         <%= f.text_field :title, class: "mb-3", class: "form-control", id:"title" %>
-        <%= f.label :style_text, "Styling_text-コーディネート詳細-" %><br />
-        <%= f.text_field :style_text, class: "mb-3", class: "form-control", id: "style_text", style: "height: 100px" %>
+        <%= f.label :style_text, "Style_text-コーディネート詳細-" %><span class="badge bg-danger">必須</span><br />
+        <%= f.text_area :style_text, class: "mb-3", class: "form-control", id: "style_text"%>
         <%= f.label :outer_item, "Outer_item-アウター-" %><br />
         <%= f.text_field :outer_item, class: "mb-3", class: "form-control", id:"outer_item" %>
         <%= f.label :tops_item, "Tops_item-トップス-" %><br />
@@ -32,9 +32,9 @@
       </div>
 
       <div class="col-5">
-        <%= f.label :images, "Styling_image-コーディネート画像-" %><br />
-        <%= f.file_field :images, name: 'item[images][]', id:"item_image" %>
-        <div class="image-list" id="image-list">
+        <%= f.label :images, "Styling_image-コーディネート画像-" %><span class="badge bg-danger">必須</span><p>(画像は6枚まで投稿できます)</p><br />
+        <%= f.file_field :images, multiple: true, name: 'item[images][]', id:"item_image" %>
+        <div class="image-list img-fluid" id="image-list">
             <% @item.images.each do |image| %>
             <%= image_tag image, class: 'images' %>
             <% end %>

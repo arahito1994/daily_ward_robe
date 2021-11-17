@@ -1,8 +1,8 @@
+
 .form-items {
   width: 100%;
-  margin: auto;
+  display: flex;
 }
-
 
 .img-fluid {
 display: block;
@@ -11,8 +11,8 @@ height: auto;
 } 
 
 .image-list img{
-  width: 250px;
-  height: 250px;
+  width: 100px;
+  height: 150px;
   object-fit: cover;
 }
 
