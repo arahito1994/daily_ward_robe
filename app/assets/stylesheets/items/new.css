@@ -1,0 +1,24 @@
+
+.form-items {
+  width: 100%;
+  display: flex;
+}
+
+.img-fluid {
+display: block;
+max-width: 100%;
+height: auto;
+} 
+
+.image-list img{
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.item-btn {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
