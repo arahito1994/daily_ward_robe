@@ -1,0 +1,66 @@
+<%= render "shared/header_item"%>
+
+
+<div class="overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" >
+  <div class="inner">
+    <div class="item__wrapper">
+      <p class="item__hedding">
+        <%= link_to @item.title %>
+      </p>
+      <%= link_to @item.user.nickname, root_path, class: :item__user %>
+        <div class="item__manage">
+          <%= link_to "編集する", root_path, class: :item__btn %>
+          <%= link_to "削除する", root_path, class: :item__btn %>
+        </div>
+      <div class="item__images">
+      <% @item.images.each do |image| %>
+        <%= image_tag image, class: 'images' %>
+      <% end %>
+      </div>
+      <div class="item__body">
+        <div class="item__detail">
+          <p class="detail__title">Style_text-コーディネート詳細-</p>
+          <p class="detail__message">
+            <%= @item.style_text %>
+          </p>
+        </div>
+        <div class="item__detail">
+          <p class="detail__title">Outer_item-アウター-</p>
+          <p class="detail__message">
+            <%= @item.outer_item %>
+          </p>
+        </div>
+        <div class="item__detail">
+          <p class="detail__title">Tops_item-トップス-</p>
+          <p class="detail__message">
+            <%= @item.tops_item %>
+          </p>
+        </div>
+        <div class="item__detail">
+          <p class="detail__title">Bottoms_item-ボトムス-</p>
+          <p class="detail__message">
+            <%= @item.bottoms_item %>
+          </p>
+        </div>
+        <div class="item__detail">
+          <p class="detail__title">Shoes_item-シューズ-</p>
+          <p class="detail__message">
+            <%= @item.shoes_item %>
+          </p>
+        </div>
+        <div class="item__detail">
+          <p class="detail__title">Goods-小物類-</p>
+          <p class="detail__message">
+            <%= @item.goods_item %>
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+<%= render "shared/footer_item"%>
+
