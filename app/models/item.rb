@@ -19,7 +19,7 @@ private
 def images_type
   images.each do  |image|
     if !image.blob.content_type.in?(%('image/jpeg image/png'))
-       errors.add(:style_image, "は.jpegまたは.png形式でアップロードしてください")
+       errors.add(:style_image, "はJPGまたはPNG形式でアップロードしてください")
     end
   end
 end
