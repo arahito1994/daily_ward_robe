@@ -8,10 +8,12 @@
         <%= link_to @item.title %>
       </p>
       <%= link_to @item.user.nickname, root_path, class: :item__user %>
+      <% if @item.user == current_user %>
         <div class="item__manage">
           <%= link_to "編集する", root_path, class: :item__btn %>
           <%= link_to "削除する", root_path, class: :item__btn %>
         </div>
+      <% end %>
       <div class="item__images">
       <% @item.images.each do |image| %>
         <%= image_tag image, class: 'images' %>
