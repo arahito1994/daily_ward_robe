@@ -74,12 +74,12 @@ RSpec.describe Item, type: :model do
       it 'imagesが7枚以上では保存できない' do
         item = FactoryBot.build(:item, :images)
         item.valid?
-        expect(item.errors.full_messages).to include("Style image は6枚以内にしてください")
+        expect(item.errors.full_messages).to include('Style image は6枚以内にしてください')
       end
       it 'imagesが指定のファイル形式(JPG/PNG)以外では保存できない' do
         item = FactoryBot.build(:item, :image_gif)
         item.valid?
-        expect(item.errors.full_messages).to include("Style image はJPGまたはPNG形式でアップロードしてください")
+        expect(item.errors.full_messages).to include('Style image はJPGまたはPNG形式でアップロードしてください')
       end
       it 'userが紐づいていないと保存ができない' do
         @item.user = nil

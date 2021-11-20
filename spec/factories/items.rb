@@ -1,14 +1,13 @@
 FactoryBot.define do
   factory :item do
-    title               {'コーディネート'}
-    style_text          {'コーディネート説明'}
-    outer_item          {'アウター'}
-    tops_item           {'シャツ'}
-    bottoms_item        {'デニム'}
-    shoes_item          {'スニーカー'}
-    goods_item          {'キャップ'}
+    title               { 'コーディネート' }
+    style_text          { 'コーディネート説明' }
+    outer_item          { 'アウター' }
+    tops_item           { 'シャツ' }
+    bottoms_item        { 'デニム' }
+    shoes_item          { 'スニーカー' }
+    goods_item          { 'キャップ' }
     association :user
-
 
     after(:build) do |items|
       items.images.attach(io: File.open('public/images/test_image.png'), filename: 'test_image.png')
@@ -17,7 +16,7 @@ FactoryBot.define do
     trait :images2 do
       after(:build) do |items|
         1.times do
-        items.images.attach(io: File.open('public/images/test_image.png'), filename: 'test_image.png')
+          items.images.attach(io: File.open('public/images/test_image.png'), filename: 'test_image.png')
         end
       end
     end
@@ -25,7 +24,7 @@ FactoryBot.define do
     trait :images3 do
       after(:build) do |items|
         2.times do
-        items.images.attach(io: File.open('public/images/test_image.png'), filename: 'test_image.png')
+          items.images.attach(io: File.open('public/images/test_image.png'), filename: 'test_image.png')
         end
       end
     end
@@ -33,7 +32,7 @@ FactoryBot.define do
     trait :images4 do
       after(:build) do |items|
         3.times do
-        items.images.attach(io: File.open('public/images/test_image.png'), filename: 'test_image.png')
+          items.images.attach(io: File.open('public/images/test_image.png'), filename: 'test_image.png')
         end
       end
     end
@@ -41,7 +40,7 @@ FactoryBot.define do
     trait :images5 do
       after(:build) do |items|
         4.times do
-        items.images.attach(io: File.open('public/images/test_image.png'), filename: 'test_image.png')
+          items.images.attach(io: File.open('public/images/test_image.png'), filename: 'test_image.png')
         end
       end
     end
@@ -49,7 +48,7 @@ FactoryBot.define do
     trait :images6 do
       after(:build) do |items|
         5.times do
-        items.images.attach(io: File.open('public/images/test_image.png'), filename: 'test_image.png')
+          items.images.attach(io: File.open('public/images/test_image.png'), filename: 'test_image.png')
         end
       end
     end
@@ -57,7 +56,7 @@ FactoryBot.define do
     trait :images do
       after(:build) do |items|
         6.times do
-        items.images.attach(io: File.open('public/images/test_image.png'), filename: 'test_image.png')
+          items.images.attach(io: File.open('public/images/test_image.png'), filename: 'test_image.png')
         end
       end
     end
@@ -68,14 +67,10 @@ FactoryBot.define do
       end
     end
 
-  trait :image_gif do
-    after(:build) do |items|
-      items.images.attach(io: File.open('public/images/sample.gif'), filename: 'sample.gif')
+    trait :image_gif do
+      after(:build) do |items|
+        items.images.attach(io: File.open('public/images/sample.gif'), filename: 'sample.gif')
+      end
     end
-  end
-
-    
-    
-
   end
 end
