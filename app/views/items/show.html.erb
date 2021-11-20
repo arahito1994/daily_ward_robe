@@ -5,7 +5,7 @@
   <div class="inner">
     <div class="item__wrapper">
       <p class="item__hedding">
-        <%= link_to @item.title %>
+        <%= @item.title %>
       </p>
       <%= link_to @item.user.nickname, root_path, class: :item__user %>
       <% if @item.user == current_user %>
