@@ -11,7 +11,7 @@
       <% if @item.user == current_user %>
         <div class="item__manage">
           <%= link_to "編集する", edit_item_path(@item.id), class: :item__btn %>
-          <%= link_to "削除する", root_path, class: :item__btn %>
+          <%= link_to "削除する", item_path(@item.id), method: :delete, class: :item__btn %>
         </div>
       <% end %>
       <div class="item__images">
