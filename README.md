@@ -34,7 +34,7 @@ https://daily-wardrobe.herokuapp.com/
 # DEMO
 - トップページ[![Image from Gyazo](https://i.gyazo.com/3e91b94b111fa639bad479200af32a5a.jpg)](https://gyazo.com/3e91b94b111fa639bad479200af32a5a)
 [![Image from Gyazo](https://i.gyazo.com/55155a9ced045ec206c70061652b0db1.jpg)](https://gyazo.com/55155a9ced045ec206c70061652b0db1)
-トップページではページ下部に投稿された記事の一覧が表示されるようになっています。(上記のgifでは何も投稿されていない状態です。)
+トップページではページ下部に投稿された記事の一覧が表示されるようになっています。
 - 新規アカウント作成![Image from Gyazo](https://i.gyazo.com/c5551925a1f59c0c7207e1864f6d8718.png)
 新規アカウント作成画面になります。必要事項を入力することで新規アカウント登録ができます。必要事項が入力されていない、または正しく入力されていない場合はエラー文が表示されます。
 - ログインページ![Image from Gyazo](https://i.gyazo.com/a771a4345e010768e026f633d9c51c59.png)
