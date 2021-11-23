@@ -32,8 +32,8 @@ https://daily-wardrobe.herokuapp.com/
 - ファッションに興味のある人同士での交流や情報共有を行うことができます。
 - 日々の服選びの参考にできます。
 # DEMO
-- Topページ![Image from Gyazo](https://i.gyazo.com/1f5b57a5d2d896efab6d36c52670aee5.gif)
-Topページではページ下部に投稿された記事の一覧が表示されるようになっています。(上記のgifでは何も投稿されていない状態です。)
+- トップページ[![Image from Gyazo](https://i.gyazo.com/6efff81b9a3e00a14cbee8ec8ee76430.gif)](https://gyazo.com/6efff81b9a3e00a14cbee8ec8ee76430)
+トップページではページ下部に投稿された記事の一覧が表示されるようになっています。(上記のgifでは何も投稿されていない状態です。)
 - 新規アカウント作成![Image from Gyazo](https://i.gyazo.com/c5551925a1f59c0c7207e1864f6d8718.png)
 新規アカウント作成画面になります。必要事項を入力することで新規アカウント登録ができます。必要事項が入力されていない、または正しく入力されていない場合はエラー文が表示されます。
 - ログイン画面![Image from Gyazo](https://i.gyazo.com/a771a4345e010768e026f633d9c51c59.png)
