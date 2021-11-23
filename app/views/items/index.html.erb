@@ -1,41 +1,27 @@
 <%= render "shared/header_item"%>
 
+
+<main>
 <div class= "position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-<div class="card bg-light text-white">
+  <div class="card bg-light text-white">
   <%= image_tag "22235444_l.jpg", class: "img-fluid"%>
-  <div class="card-img-overlay">
+   <div class="card-img-overlay">
     <h1 class="card-title">ー新しいを日常的にー</h1>
     <p class="card-text">あなたのワードローブに新しい、そして日常的な選択肢を</p>
     <p class="card-text">Daily_Wardrobeを使う人に新しい選択肢をそして新しいを日常的に</p>
+   </div>
   </div>
 </div>
-</div>
-
-<main>
-<div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-light">
+<h2 class="alert alert-secondary role=alert text-center">投稿一覧</h2>
+<div class="d-md-flex flex-md-equal my-md-3">
   <div class="row mb-2">
-   <% @items.each do |item| %>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary"></strong>
-          <h3 class="mb-0"><%= item.title %></h3>
-          <div class="mb-1 text-muted"><%= item.user.nickname %></div>
-          <p class="card-text mb-auto"><%= item.style_text %></p>
-          <%= link_to "詳細", item_path(item.id) %>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-        <div class="item-images img-fluid">
-        <%= image_tag item.images[0], class:'images' %>
-        </div>
-        </div>
-      </div>
-    </div>
-   <% end %>
-   
+  <%= render @items %>
   </div>
 </div>
 </main>
+
+
 
 <%= render "shared/footer_item"%>
 
