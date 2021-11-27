@@ -49,7 +49,7 @@ https://daily-wardrobe.herokuapp.com/
 - コメント機能[![Image from Gyazo](https://i.gyazo.com/b27667f02c66db0b3fc71943097c0d11.png)](https://gyazo.com/b27667f02c66db0b3fc71943097c0d11)
 [![Image from Gyazo](https://i.gyazo.com/1ab7ee4753770fc7c7bacd10016efb1e.png)](https://gyazo.com/1ab7ee4753770fc7c7bacd10016efb1e)
 [![Image from Gyazo](https://i.gyazo.com/7aa1dcf2aef9d5e8ff708d30b7e667d3.png)](https://gyazo.com/7aa1dcf2aef9d5e8ff708d30b7e667d3)
-ログイン中のユーザーは投稿詳細ページ下部のコメントフォームより投稿に対してのコメントをすることができます。コメントは投稿フォーム下部にリスト形式で表示されます。ログインしていないユーザーに関しては、コメントフォームが表示されず、コメントを閲覧することのみ可能になっています。
+ログイン中のユーザーは投稿詳細ページ下部のコメントフォームより投稿に対してのコメントをすることができます。コメントはコメントフォーム下部にリスト形式で表示されます。ログインしていないユーザーに関しては、コメントフォームが表示されず、コメントを閲覧することのみ可能になっています。
 # 実装予定の機能
 - リアクション機能(いいね機能)
 - 検索機能
