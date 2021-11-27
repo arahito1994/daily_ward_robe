@@ -28,9 +28,5 @@ RSpec.describe Comment, type: :model do
         expect(@comment.errors.full_messages).to include('Item must exist')
       end
     end
-  
-  
   end
 end
-
-

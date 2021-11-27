@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :comment do
-    comments          { 'コメント' }
+    comments { 'コメント' }
     association :user
     association :item
   end
