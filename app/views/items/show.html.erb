@@ -60,6 +60,26 @@
       </div>
     </div>
   </div>
+  <div class="item__comments p-3 p-md-5 m-md-3 bg-light">
+        <% if user_signed_in? %>
+          <%= form_with model: [@item,@comment],local: true do |f|%>
+            <div class="field">
+              <%= f.label :comments, "コメント" %><br />
+              <%= f.text_field :comments, id:"comments" %>
+            </div>
+            <div class="actions">
+              <%= f.submit "送信する", class: "btn btn-primary" %>
+            </div>
+          <% end %>
+        <% end %>
+        <ul class="comments_lists">
+          <% @comments.each do |comment| %>
+            <li class="comments_list">
+              <%= comment.comments%>
+              <%= link_to "(#{comment.user.nickname})", root_path, class: :comments_user %>
+            </li>
+          <% end %>
+        </ul>
   </div>
 
 
