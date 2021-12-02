@@ -4,6 +4,12 @@
         <div class="col p-4 d-flex flex-column position-static">
           <strong class="d-inline-block mb-2 text-primary"></strong>
           <h3 class="mb-0"><%= item.title %></h3>
+          <% if current_user.already_favorited?(item) %>
+              <%= link_to 'いいねを外す', item_favorites_path(item), method: :delete %>
+          <% else %>
+              <%= link_to 'いいね', item_favorites_path(item), method: :post %>
+          <% end %>
+          <%= item.favorites.count %>
           <div class="mb-1 text-muted"><%= link_to item.user.nickname, user_path(item.user) %></div>
           <p class="card-text mb-auto"><%= item.style_text %></p>
           <%= link_to "詳細", item_path(item.id) %>
@@ -15,5 +21,7 @@
         </div>
       </div>
     </div>
+
+    
 
 
