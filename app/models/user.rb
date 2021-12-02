@@ -11,4 +11,8 @@ class User < ApplicationRecord
   has_many :items
   has_many :comments
   has_many :favorites, dependent: :destroy
+
+  def alerady_favorited?(item)
+    self.favorites.exists?(item_id: item.id)
+  end
 end
