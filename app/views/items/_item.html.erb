@@ -6,30 +6,36 @@
           <h3 class="mb-0"><%= item.title %></h3>
         <% if user_signed_in? %>
           <div class=favorites>
-            <% if current_user.already_favorited?(item) %>
-                <%= link_to item_favorites_path(item), method: :delete do %>
-                  <i class= "fas fa-heart"></i>
-                <% end %>
+            <% if current_user != item.user %>
+              <% if current_user.already_favorited?(item) %>
+                  <%= link_to item_favorites_path(item), method: :delete do %>
+                    <i class= "fas fa-heart"></i>
+                  <% end %>
+              <% else %>
+                  <%= link_to item_favorites_path(item), method: :post do %>
+                      <i class= "far fa-heart"></i>
+                  <% end %>
+              <% end %>
             <% else %>
-                <%= link_to item_favorites_path(item), method: :post do %>
-                    <i class= "far fa-heart"></i>
-                <% end %>
+              <i class= "far fa-heart"></i>
             <% end %>
             <%= item.favorites.count %>
           </div>
         <% end %>
-          <div class="mb-1 text-muted"><%= link_to item.user.nickname, user_path(item.user) %></div>
+        <div class="mb-1 text-muted"><%= link_to item.user.nickname, user_path(item.user) %></div>
           <p class="card-text mb-auto"><%= item.style_text %></p>
           <%= link_to "詳細", item_path(item.id) %>
         </div>
         <div class="col-auto d-none d-lg-block">
-        <div class="item-images img-fluid">
-        <%= image_tag item.images[0], class:'images' %>
-        </div>
+          <div class="item-images img-fluid">
+          <%= image_tag item.images[0], class:'images' %>
+          </div>
         </div>
       </div>
     </div>
 
     
+    
+
 
 
