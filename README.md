@@ -50,8 +50,12 @@ https://daily-wardrobe.herokuapp.com/
 [![Image from Gyazo](https://i.gyazo.com/1ab7ee4753770fc7c7bacd10016efb1e.png)](https://gyazo.com/1ab7ee4753770fc7c7bacd10016efb1e)
 [![Image from Gyazo](https://i.gyazo.com/7aa1dcf2aef9d5e8ff708d30b7e667d3.png)](https://gyazo.com/7aa1dcf2aef9d5e8ff708d30b7e667d3)
 ログイン中のユーザーは投稿詳細ページ下部のコメントフォームより投稿に対してのコメントをすることができます。コメントはコメントフォーム下部にリスト形式で表示されます。ログインしていないユーザーに関しては、コメントフォームが表示されず、コメントを閲覧することのみ可能になっています。
+- リアクション機能(いいね機能)[![Image from Gyazo](https://i.gyazo.com/5131e5b994694d261b3788df38fe2a00.jpg)](https://gyazo.com/5131e5b994694d261b3788df38fe2a00)
+[![Image from Gyazo](https://i.gyazo.com/74763f11099205ad00c581ef0b820d0d.jpg)](https://gyazo.com/74763f11099205ad00c581ef0b820d0d)
+[![Image from Gyazo](https://i.gyazo.com/9a1afa51e538c90f49bb1651f117133a.gif)](https://gyazo.com/9a1afa51e538c90f49bb1651f117133a)
+[![Image from Gyazo](https://i.gyazo.com/f7db3ea669a72b31dd7d39b10c66cad3.gif)](https://gyazo.com/f7db3ea669a72b31dd7d39b10c66cad3)
+ログイン中のユーザーは投稿に対して"いいね"をすることができます。ユーザーがログインしていない場合はいいねボタンが表示されません。ログイン中のユーザーは自身以外のユーザーの投稿に対して"いいね"をすることができます。"いいね"は、ひとつの投稿に対して一度しかできず、同じ投稿に対して再度いいねボタンを押すと"いいね"を取り消すことができます。
 # 実装予定の機能
-- リアクション機能(いいね機能)
 - 検索機能
 
 # ローカルでの操作方法
@@ -61,6 +65,7 @@ https://daily-wardrobe.herokuapp.com/
 - 4.自身の投稿の場合は投稿詳細ページより編集および削除をすることができます。
 - 5.一覧ページおよびヘッダー、投稿詳細ページのユーザー名のリンクより、ユーザー詳細ページに遷移することができ、そのユーザーの投稿を一覧として見ることができます。
 - 6.ログイン中のユーザーは投稿詳細ページより投稿に対してのコメントをすることができます。
+- 7.ログイン中のユーザーは他のユーザーの投稿に対して一覧ページおよび投稿詳細ページから"いいね"をすることができます。
 
 # 使用技術(開発環境)
 ## バックエンド
