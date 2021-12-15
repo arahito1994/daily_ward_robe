@@ -55,8 +55,13 @@ https://daily-wardrobe.herokuapp.com/
 [![Image from Gyazo](https://i.gyazo.com/9a1afa51e538c90f49bb1651f117133a.gif)](https://gyazo.com/9a1afa51e538c90f49bb1651f117133a)
 [![Image from Gyazo](https://i.gyazo.com/f7db3ea669a72b31dd7d39b10c66cad3.gif)](https://gyazo.com/f7db3ea669a72b31dd7d39b10c66cad3)
 ログイン中のユーザーは投稿に対して"いいね"をすることができます。ユーザーがログインしていない場合はいいねボタンが表示されません。ログイン中のユーザーは自身以外のユーザーの投稿に対して"いいね"をすることができます。"いいね"は、ひとつの投稿に対して一度しかできず、同じ投稿に対して再度いいねボタンを押すと"いいね"を取り消すことができます。
-# 実装予定の機能
-- 検索機能
+- 投稿検索機能[![Image from Gyazo](https://i.gyazo.com/90ca3d02afdccff4cc4ffcb2c82a9ce1.jpg)](https://gyazo.com/90ca3d02afdccff4cc4ffcb2c82a9ce1)
+[![Image from Gyazo](https://i.gyazo.com/4e8387d729057ab50f3be42a69954284.jpg)](https://gyazo.com/4e8387d729057ab50f3be42a69954284)
+[![Image from Gyazo](https://i.gyazo.com/8e014d3a5e320b208dfb3a4facaaf7b5.gif)](https://gyazo.com/8e014d3a5e320b208dfb3a4facaaf7b5)
+[![Image from Gyazo](https://i.gyazo.com/5aa25a563db03ac4e94c42b76f6628b6.gif)](https://gyazo.com/5aa25a563db03ac4e94c42b76f6628b6)
+ユーザーはログイン状態に関係なく投稿検索機能を使用することができます。投稿検索機能ではヘッダー上の検索フォームより投稿タイトルを検索することができます。検索後は検索結果画面より、キーワードに該当する検索結果を一覧で見ることができます(検索のキーワードはタイトルに含まれる文字を含むことで該当します)。入力したキーワードに該当する項目が存在していない場合は検索結果は表示されません。
+
+
 
 # ローカルでの操作方法
 - 1.ユーザーの新規登録をします。
@@ -66,6 +71,7 @@ https://daily-wardrobe.herokuapp.com/
 - 5.一覧ページおよびヘッダー、投稿詳細ページのユーザー名のリンクより、ユーザー詳細ページに遷移することができ、そのユーザーの投稿を一覧として見ることができます。
 - 6.ログイン中のユーザーは投稿詳細ページより投稿に対してのコメントをすることができます。
 - 7.ログイン中のユーザーは他のユーザーの投稿に対して一覧ページおよび投稿詳細ページから"いいね"をすることができます。
+- 8.ログイン状態に関わらず、ユーザーは投稿タイトルの検索をすることができます。検索結果は検索結果画面より確認することができます。
 
 # 使用技術(開発環境)
 ## バックエンド
