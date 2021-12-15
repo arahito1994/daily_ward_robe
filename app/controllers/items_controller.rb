@@ -1,5 +1,5 @@
 class ItemsController < ApplicationController
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!, except: [:index, :show, :search]
   before_action :set_item, only: [:show, :edit, :update, :destroy]
   before_action :access_item, only: [:edit, :update, :destroy]
 
@@ -23,6 +23,10 @@ class ItemsController < ApplicationController
   def show
     @comment = Comment.new
     @comments = @item.comments
+  end
+
+  def search
+    @items = Item.search(params[:keyword])
   end
 
   def edit

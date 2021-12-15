@@ -25,4 +25,12 @@ class Item < ApplicationRecord
       images.length <= 6
     end
   end
+
+  def self.search(search)
+    if search != ""
+      Item.where('text LIKE(?)', "%#{search}%")
+    else
+      Item.all
+    end
+  end
 end
