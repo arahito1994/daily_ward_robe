@@ -1,0 +1,14 @@
+<%= render "shared/header_item"%>
+
+<div class="overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" >
+    <div class="py-5 ">
+      <h2 class="alert alert-secondary" role="alert">検索結果</h2>
+    </div>
+    <div class="row mb-2">
+      <% @items.each do |item| %>
+        <%= render partial: "item", locals: { item: item } %>
+      <% end %>
+    </div>
+</div>
+
+<%= render "shared/footer_item"%>
